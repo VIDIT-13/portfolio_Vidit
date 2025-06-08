@@ -1,22 +1,60 @@
 import React, { useState } from "react";
-import {motion} from "motion/react"
+import { motion } from "motion/react";
 
-function Navigation(){
-    return <ul className="nav-ul">
-        <li className="nav-li">
-            <a href="#home" className="nav-link">Home</a>
-        </li>
-        <li className="nav-li">
-            <a href="#work" className="nav-link">Work</a>
-        </li>
-        <li className="nav-li">
-            <a href="#about" className="nav-link">About</a>
-        </li>
-        <li className="nav-li">
-            <a href="#contact" className="nav-link">Contact</a>
-        </li>
+function Navigation() {
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  return (
+    <ul className="nav-ul">
+      <li className="nav-li">
+        <a
+          href="#home"
+          className="nav-link"
+          onClick={(e) => handleScroll(e, "#home")}
+        >
+          Home
+        </a>
+      </li>
+      <li className="nav-li">
+        <a
+          href="#work"
+          className="nav-link"
+          onClick={(e) => handleScroll(e, "#work")}
+        >
+          Work
+        </a>
+      </li>
+      <li className="nav-li">
+        <a
+          href="#about"
+          className="nav-link"
+          onClick={(e) => handleScroll(e, "#about")}
+        >
+          About
+        </a>
+      </li>
+      <li className="nav-li">
+        <a
+          href="#contact"
+          className="nav-link"
+          onClick={(e) => handleScroll(e, "#contact")}
+        >
+          Contact
+        </a>
+      </li>
     </ul>
+  );
 }
+// ...existing code...
 const Navbar = () => {
     const [isOpen,setisOpen]=useState(false);
 
