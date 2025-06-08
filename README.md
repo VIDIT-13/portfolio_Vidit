@@ -1,12 +1,64 @@
-# React + Vite
+# 🚀 Vidit Allen — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This portfolio showcases who I am, what I do, and some of the exciting projects I've built using the MERN stack and other modern technologies.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥️ Live Preview
 
-## Expanding the ESLint configuration
+🌐 [Visit My Portfolio](https://your-portfolio-domain.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+This portfolio is built using:
+
+- **React.js** ⚛️
+- **TailwindCSS** 🎨
+- **Framer Motion** 🧠
+- **Three.js** 🌌
+- **EmailJS** 📩
+- **Vite** ⚡
+- **GSAP / ScrollTrigger** ✨
+- **Custom Canvas Animations / Particles** 🎇
+
+---
+
+## 📂 Features
+
+- Dynamic "FlipWords" animation
+- Hero section with desktop/mobile responsiveness
+- Interactive background layers and animations
+- Project showcase with filtering and hover effects
+- Smooth scrolling and modern UI
+- Functional contact form (EmailJS integration)
+- Animated particle background
+- Modular components and reusability
+
+---
+
+## 📸 Preview
+
+![Hero Section Screenshot](./assets/readme-preview/hero.png)
+![Projects Section Screenshot](./assets/readme-preview/projects.png)
+
+---
+
+## 📁 Folder Structure
+
+```bash
+.
+├── public/
+│   ├── assets/
+│   └── favicon.ico
+├── src/
+│   ├── Components/
+│   ├── Pages/
+│   ├── data/
+│   ├── styles/
+│   └── App.jsx
+├── .env
+├── index.html
+├── package.json
+└── README.md
