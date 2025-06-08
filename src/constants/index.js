@@ -149,19 +149,19 @@ export const experiences = [
 
 export const mySocials = [
   {
-    name: "WhatsApp",
-    href: "",
-    icon: "/assets/socials/whatsApp.svg",
-  },
-  {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/vidit-30913a293/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
+    name: "Fiverr",
+    href: "https://www.fiverr.com/viditallen/buying?source=avatar_menu_profile",
+    icon: "assets/socials/fiverr.svg"
+  },
+  {
     name: "Github",
     href: "https://github.com/VIDIT-13/",
-    icon: "/assets/socials/github.svg",
+    icon: "/assets/socials/githubwhite.svg",
   },
 ];
 
