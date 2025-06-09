@@ -10,7 +10,7 @@ export const myProjects = [
       "Developed using MERN stack with real-time progress tracking.",
       "Enhanced UI with TailwindCSS for better user experience.",
     ],
-    href: "",
+    href: "https://github.com/VIDIT-13/classroom-assistant-master-2",
     logo: "",
     image: "/assets/projects/autograd.jpeg",
     tags: [
@@ -52,7 +52,7 @@ export const myProjects = [
       "Built with React and styled using TailwindCSS.",
       "Supports group and individual conversations with message history.",
     ],
-    href: "",
+    href: "https://chattrix-k1au.onrender.com",
     logo: "",
     image: "/assets/projects/chattrix.jpeg",
     tags: [
@@ -73,7 +73,7 @@ export const myProjects = [
       "Clean navigation and reading experience built using React.",
       "Lightweight and optimized for speed.",
     ],
-    href: "",
+    href: "https://github.com/VIDIT-13/All-Js-related-projects-",
     logo: "",
     image: "/assets/projects/gita.jpeg",
     tags: [
@@ -92,7 +92,7 @@ export const myProjects = [
       "Clean, minimalist UI using TailwindCSS.",
       "Fully responsive with interactive 3D model.",
     ],
-    href: "",
+    href: "https://github.com/VIDIT-13/All-Js-related-projects-",
     logo: "",
     image: "/assets/projects/macbook.jpeg",
     tags: [
@@ -111,7 +111,7 @@ export const myProjects = [
       "React-based frontend with intuitive UX.",
       "Optimized for mobile and desktop views.",
     ],
-    href: "",
+    href: "https://github.com/VIDIT-13/All-Js-related-projects-",
     logo: "",
     image: "/assets/projects/weatherweb.jpeg",
     tags: [
