@@ -126,7 +126,7 @@ export const experiences = [
   {
     title: "Full Stack Developer Intern",
     job: "MLSA KIET (Microsoft Learn Student Ambassadors)",
-    date: "May 2023 - July 2023",
+    date: "September 2024 - November 2024",
     contents: [
       "Completed a 100-hour internship focused on Full Stack Web Development with modern technologies.",
       "Worked on multiple collaborative projects following agile methodology.",
