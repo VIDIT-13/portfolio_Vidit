@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import Navbar from "./Sections/Navbar";
-import Hero from "./Sections/Hero";
-import About from "./Sections/About";
-import Projects from "./Sections/Projects";
-import Experiences from "./Sections/Experiences";
-import Contact from "./Sections/Contact";
-import Footer from "./Sections/Footer";
+
+// Lazy load components with meaningful chunk names
+const Hero = lazy(() =>
+  import(/* webpackChunkName: "hero" */ "./Sections/Hero")
+);
+const About = lazy(() =>
+  import(/* webpackChunkName: "about" */ "./Sections/About")
+);
+const Projects = lazy(() =>
+  import(/* webpackChunkName: "projects" */ "./Sections/Projects")
+);
+const Experiences = lazy(() => import("./Sections/Experiences"));
+const Contact = lazy(() => import("./Sections/Contact"));
+const Footer = lazy(() => import("./Sections/Footer"));
 import SplashCursor from "../Reactbits/SplashCursor/SplashCursor";
+
 const App = () => {
   const [issplash, setsplash] = useState(false);
 
@@ -24,21 +33,23 @@ const App = () => {
         {issplash ? "Disable" : "Enable"} Splash
         <img src="/assets/cursor.svg" alt="cursor" className="w-4 h-4" />
       </button>
-      <section id="home">
-        <Hero />
-      </section>
-      <section id="about">
-        <About></About>
-      </section>
-      <section id="work">
-        <Projects />
-        <Experiences />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-      <Footer />
-      {issplash && <SplashCursor />}
+      <Suspense fallback={<div className="loading">Loading...</div>}>
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="about">
+          <About></About>
+        </section>
+        <section id="work">
+          <Projects />
+          <Experiences />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
+        <Footer />
+        {issplash && <SplashCursor />}
+      </Suspense>
     </div>
   );
 };

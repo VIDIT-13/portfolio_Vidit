@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
+import debounce from "lodash.debounce";
 import emailjs from "@emailjs/browser";
 import Alert from "../Components/Alert";
 import { Particles } from "../Components/Particles";
@@ -23,32 +24,37 @@ const Contact = () => {
       setShowAlert(false);
     }, 5000);
   };
+  const debouncedSubmit = useCallback(
+    debounce(async (data) => {
+      try {
+        console.log("From submitted:", formData);
+        await emailjs.send(
+          "service_zy9kqer",
+          "template_6dguzsq",
+          {
+            from_name: formData.name,
+            to_name: "Vidit",
+            from_email: formData.email,
+            to_email: "viditallen4@gmail.com",
+            message: formData.message,
+          },
+          "kPPo-gmixmMDk2GWz"
+        );
+        setIsLoading(false);
+        setFormData({ name: "", email: "", message: "" });
+        showAlertMessage("success", "You message has been sent!");
+      } catch (error) {
+        setIsLoading(false);
+        console.log(error);
+        showAlertMessage("danger", "Somthing went wrong!");
+      }
+    }, 500),
+    []
+  );
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-
-    try {
-      console.log("From submitted:", formData);
-      await emailjs.send(
-        "service_zy9kqer",
-        "template_6dguzsq",
-        {
-          from_name: formData.name,
-          to_name: "Vidit",
-          from_email: formData.email,
-          to_email: "viditallen4@gmail.com",
-          message: formData.message,
-        },
-        "kPPo-gmixmMDk2GWz"
-      );
-      setIsLoading(false);
-      setFormData({ name: "", email: "", message: "" });
-      showAlertMessage("success", "You message has been sent!");
-    } catch (error) {
-      setIsLoading(false);
-      console.log(error);
-      showAlertMessage("danger", "Somthing went wrong!");
-    }
+    debouncedSubmit(formData);
   };
   return (
     <section className="relative flex items-center c-space section-spacing">
@@ -64,7 +70,7 @@ const Contact = () => {
         <div className="flex flex-col items-start w-full gap-5 mb-10">
           <h2 className="text-heading">Let's Talk</h2>
           <p className="font-normal text-neutral-400">
-            Whether you're loking to build a new website, improve your existing
+            Whether you're looking to build a new website, improve your existing
             platform, or bring a unique project to life, I'm here to help
           </p>
         </div>

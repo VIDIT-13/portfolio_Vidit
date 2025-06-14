@@ -257,6 +257,20 @@ export const Particles = ({
     rafID.current = window.requestAnimationFrame(animate);
   };
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // Reduce particles on mobile
+  const mobileQuantity = Math.floor(quantity * 0.5);
+
   return (
     <div
       className={twMerge("pointer-events-none", className)}
