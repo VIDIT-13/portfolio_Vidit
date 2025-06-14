@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This portfolio showcases who I am, wha
 
 ## 🖥️ Live Preview
 
-🌐 [Visit My Portfolio](https://your-portfolio-domain.com)
+🌐 [Visit My Portfolio](https://viditallen.xyz)
 
 ---
 
@@ -35,13 +35,6 @@ This portfolio is built using:
 - Functional contact form (EmailJS integration)
 - Animated particle background
 - Modular components and reusability
-
----
-
-## 📸 Preview
-
-![Hero Section Screenshot](./assets/readme-preview/hero.png)
-![Projects Section Screenshot](./assets/readme-preview/projects.png)
 
 ---
 
