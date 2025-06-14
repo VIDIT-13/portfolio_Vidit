@@ -1,12 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import viteImagemin from 'vite-plugin-imagemin';
+import imagemin from 'vite-plugin-imagemin';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    viteImagemin({
+    imagemin({
       gifsicle: {
         optimizationLevel: 7,
         interlaced: false,
@@ -23,9 +23,7 @@ export default defineConfig({
       },
       svgo: {
         plugins: [
-          {
-            name: 'removeViewBox',
-          },
+          'removeViewBox',
           {
             name: 'removeEmptyAttrs',
             active: false,
@@ -38,9 +36,16 @@ export default defineConfig({
     minify: 'terser',
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          utils: ['lodash']
+        manualChunks: (id) => {
+          // Chunk for React and React DOM
+          if (id.includes('node_modules/react') || 
+              id.includes('node_modules/react-dom')) {
+            return 'vendor';
+          }
+          // Chunk for Lodash modules
+          if (id.includes('node_modules/lodash')) {
+            return 'utils';
+          }
         }
       }
     }
