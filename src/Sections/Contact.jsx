@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback ,useEffect } from "react";
 import debounce from "lodash.debounce";
 import emailjs from "@emailjs/browser";
 import Alert from "../Components/Alert";
@@ -13,6 +13,22 @@ const Contact = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertType, setAlertType] = useState("success");
   const [alertMessage, setAlertMessage] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    // Check on mount
+    checkMobile();
+    
+    // Check on resize
+    window.addEventListener("resize", checkMobile);
+    
+    // Cleanup
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -58,13 +74,15 @@ const Contact = () => {
   };
   return (
     <section className="relative flex items-center c-space section-spacing">
-      <Particles
-        className="absolute inset-0 -z-50"
-        quantity={100}
-        ease={80}
-        color={"#ffffff"}
-        refresh
-      />
+      {!isMobile && (
+        <Particles
+          className="absolute inset-0 -z-50"
+          quantity={100}
+          ease={80}
+          color={"#ffffff"}
+          refresh
+        />
+      )}
       {showAlert && <Alert type={alertType} text={alertMessage} />}
       <div className="flex flex-col items-center justify-center max-w-md p-5 mx-auto border border-white/10 rounded-2xl bg-primary">
         <div className="flex flex-col items-start w-full gap-5 mb-10">

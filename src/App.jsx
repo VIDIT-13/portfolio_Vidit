@@ -1,5 +1,6 @@
-import React, { useState, lazy, Suspense } from "react";
+import React, { useState, lazy, Suspense, useEffect } from "react";
 import Navbar from "./Sections/Navbar";
+import MobileAlert from "./Components/MobileAlert";
 
 // Lazy load components with meaningful chunk names
 const Hero = lazy(() =>
@@ -18,9 +19,29 @@ import SplashCursor from "../Reactbits/SplashCursor/SplashCursor";
 
 const App = () => {
   const [issplash, setsplash] = useState(false);
+  const [showMobileAlert, setShowMobileAlert] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const toggleSplash = () => {
-    setsplash(!issplash);
+    if (isMobile && !issplash) {
+      setShowMobileAlert(true);
+    } else {
+      setsplash(!issplash);
+    }
+  };
+
+  const handleMobileAlertClose = () => {
+    setShowMobileAlert(false);
+    setsplash(true);
   };
 
   return (
@@ -28,11 +49,12 @@ const App = () => {
       <Navbar />
       <button
         onClick={toggleSplash}
-        className="fixed z-50 flex items-center gap-2 px-4 py-2 text-lg cursor-pointer transition-all  rounded-lg bottom-5 right-5 hover:scale-110 duration-200"
+        className="fixed z-40 flex items-center gap-2 px-4 py-2 text-lg cursor-pointer transition-all rounded-lg bottom-5 right-5 hover:scale-110 duration-200 bg-neutral-800/80 backdrop-blur-sm"
       >
         {issplash ? "Disable" : "Enable"} Splash
         <img src="/assets/cursor.svg" alt="cursor" className="w-4 h-4" />
       </button>
+      {showMobileAlert && <MobileAlert onClose={handleMobileAlertClose} />}
       <Suspense fallback={<div className="loading">Loading...</div>}>
         <section id="home">
           <Hero />
