@@ -2,6 +2,7 @@ import React, { useState, lazy, Suspense, useEffect } from "react";
 import Navbar from "./Sections/Navbar";
 import MobileAlert from "./Components/MobileAlert";
 
+
 // Lazy load components with meaningful chunk names
 const Hero = lazy(() =>
   import(/* webpackChunkName: "hero" */ "./Sections/Hero")
@@ -16,6 +17,7 @@ const Experiences = lazy(() => import("./Sections/Experiences"));
 const Contact = lazy(() => import("./Sections/Contact"));
 const Footer = lazy(() => import("./Sections/Footer"));
 import SplashCursor from "../Reactbits/SplashCursor/SplashCursor";
+import { Loader } from "@react-three/drei";
 
 const App = () => {
   const [issplash, setsplash] = useState(false);
@@ -55,7 +57,7 @@ const App = () => {
         <img src="/assets/cursor.svg" alt="cursor" className="w-4 h-4" />
       </button>
       {showMobileAlert && <MobileAlert onClose={handleMobileAlertClose} />}
-      <Suspense fallback={<div className="loading">Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <section id="home">
           <Hero />
         </section>
