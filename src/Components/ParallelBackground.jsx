@@ -1,8 +1,12 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
+import { useMediaQuery } from "react-responsive";
 
 const ParallaxBackground = () => {
+  const isMobile = useMediaQuery({ maxWidth: 853 });
   const { scrollYProgress } = useScroll();
   const x = useSpring(scrollYProgress, { damping: 50 });
+
+  // Always call hooks, but use their values only if not mobile
   const mountain3Y = useTransform(x, [0, 0.5], ["0%", "70%"]);
   const planetsX = useTransform(x, [0, 0.5], ["0%", "-20%"]);
   const mountain2Y = useTransform(x, [0, 0.5], ["0%", "30%"]);
@@ -27,7 +31,7 @@ const ParallaxBackground = () => {
             backgroundImage: "url(/assets/mountain-3.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
-            y: mountain3Y,
+            y: isMobile ? "0%" : mountain3Y,
           }}
         />
         {/* Planets */}
@@ -37,7 +41,7 @@ const ParallaxBackground = () => {
             backgroundImage: "url(/assets/planets.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
-            x: planetsX,
+            x: isMobile ? "0%" : planetsX,
           }}
         />
         {/* Mountain Layer 2 */}
@@ -47,17 +51,17 @@ const ParallaxBackground = () => {
             backgroundImage: "url(/assets/mountain-2.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
-            y: mountain2Y,
+            y: isMobile ? "0%" : mountain2Y,
           }}
         />
-        {/* Mountaine Layer 1 */}
+        {/* Mountain Layer 1 */}
         <motion.div
           className="absolute inset-0 -z-10"
           style={{
             backgroundImage: "url(/assets/mountain-1.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
-            y: mountain1Y,
+            y: isMobile ? "0%" : mountain1Y,
           }}
         />
       </div>
