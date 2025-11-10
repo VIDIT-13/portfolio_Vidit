@@ -22,6 +22,28 @@ export const myProjects = [
   },
   {
     id: 2,
+    title: "Rock Alert",
+    description:
+      "A real-time disaster alert and safety system that detects earthquakes and rockfalls, instantly notifying users in nearby zones.",
+    subDescription: [
+      "Implemented real-time rockfall detection using motion and vibration sensor data integrated via APIs.",
+      "Built real-time earthquake detection using seismological APIs for instant hazard recognition.",
+      "Integrated live alert notifications using Firebase Cloud Messaging and location-based triggers.",
+      "Developed an interactive dashboard to visualize hazard zones, alert intensity, and historical data.",
+      "Developed using the MERN stack with TailwindCSS and map-based data visualization for alert regions.",
+    ],
+    href: "https://github.com/VIDIT-13/Rock-Alert", // update if your repo link differs
+    logo: "",
+    image: "/assets/projects/rockalert.jpeg",
+    tags: [
+      { id: 1, name: "React", path: "/assets/logos/react.svg" },
+      { id: 2, name: "Node.js", path: "/assets/logos/nodejs.svg" },
+      { id: 3, name: "MongoDB", path: "/assets/logos/mongodb.svg" },
+      { id: 4, name: "TailwindCSS", path: "/assets/logos/tailwind.svg" },
+    ],
+  },
+  {
+    id: 3,
     title: "Cognify",
     description:
       "A neurodivergent support platform that helps assess and assist individuals with ADHD, Autism, and Dyslexia.",
@@ -42,7 +64,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Chattrix",
     description:
       "A real-time chat application using Stream for seamless messaging and notifications.",
@@ -63,7 +85,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Bhagavad Gita Web App",
     description:
       "An interactive app for exploring verses and chapters of the Bhagavad Gita.",
@@ -83,7 +105,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "MacBook M4 Landing Page",
     description:
       "A 3D product landing page showcasing Apple MacBook M4 using animations.",
@@ -102,7 +124,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Weather Web App",
     description:
       "A real-time weather app that provides temperature, wind speed, and humidity based on your location.",
@@ -119,7 +141,7 @@ export const myProjects = [
       { id: 2, name: "API", path: "/assets/logos/api.svg" },
       { id: 3, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
     ],
-  }
+  },
 ];
 
 export const experiences = [
@@ -137,7 +159,7 @@ export const experiences = [
   {
     title: "Freelance Developer",
     job: "Self-Employed",
-    date: "2024 - Present",
+    date: "June 2025 - September 2025",
     contents: [
       "Delivered responsive, scalable web applications and 3D interactive experiences for various clients.",
       "Created personal and client portfolios using Three.js, React, and Vite.",
@@ -156,7 +178,7 @@ export const mySocials = [
   {
     name: "Fiverr",
     href: "https://www.fiverr.com/viditallen/buying?source=avatar_menu_profile",
-    icon: "assets/socials/fiverr.svg"
+    icon: "assets/socials/fiverr.svg",
   },
   {
     name: "Github",
@@ -164,4 +186,3 @@ export const mySocials = [
     icon: "/assets/socials/githubwhite.svg",
   },
 ];
-
