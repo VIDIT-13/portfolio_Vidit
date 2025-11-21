@@ -146,25 +146,25 @@ export const myProjects = [
 
 export const experiences = [
   {
-    title: "Full Stack Developer Intern",
-    job: "MLSA KIET (Microsoft Learn Student Ambassadors)",
-    date: "September 2024 - November 2024",
+    title: "Deloitte — Virtual Internship",
+    job: "Deloitte",
+    date: "January 2024 - March 2024",
     contents: [
-      "Completed a 100-hour internship focused on Full Stack Web Development with modern technologies.",
-      "Worked on multiple collaborative projects following agile methodology.",
-      "Built dynamic web components using React and styled them using TailwindCSS and Bootstrap.",
-      "Gained hands-on experience with REST APIs, Git, and deployment tools like Vercel.",
+      "Completed Deloitte's virtual internship program focused on business consulting and technology.",
+      "Worked on case studies to analyze business problems and propose technology-driven solutions.",
+      "Learned best practices for stakeholder communication, data-driven decision making, and solution design.",
+      "Prepared client-ready presentations and delivered recommendations to mentors.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
-    date: "June 2025 - September 2025",
+    title: "Software Developer Intern",
+    job: "Innocrede Solutions",
+    date: "April 2024 - August 2024",
     contents: [
-      "Delivered responsive, scalable web applications and 3D interactive experiences for various clients.",
-      "Created personal and client portfolios using Three.js, React, and Vite.",
-      "Integrated real-time APIs and secure authentication systems using JWT and Express.",
-      "Continuously learning and adapting to new tech stacks including MongoDB, Next.js, and security best practices.",
+      "Built frontend features using React and TailwindCSS and integrated them with Node.js APIs.",
+      "Implemented REST API integrations, improved application performance, and fixed bugs.",
+      "Wrote unit tests and contributed to CI/CD workflows for smoother deployments.",
+      "Collaborated in Agile sprints with cross-functional teams and participated in code reviews.",
     ],
   },
 ];
