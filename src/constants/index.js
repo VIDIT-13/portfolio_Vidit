@@ -146,20 +146,9 @@ export const myProjects = [
 
 export const experiences = [
   {
-    title: "Deloitte — Virtual Internship",
-    job: "Deloitte",
-    date: "January 2024 - March 2024",
-    contents: [
-      "Completed Deloitte's virtual internship program focused on business consulting and technology.",
-      "Worked on case studies to analyze business problems and propose technology-driven solutions.",
-      "Learned best practices for stakeholder communication, data-driven decision making, and solution design.",
-      "Prepared client-ready presentations and delivered recommendations to mentors.",
-    ],
-  },
-  {
     title: "Software Developer Intern",
     job: "Innocrede Solutions",
-    date: "April 2024 - August 2024",
+    date: "June 2025 - September 2025",
     contents: [
       "Built frontend features using React and TailwindCSS and integrated them with Node.js APIs.",
       "Implemented REST API integrations, improved application performance, and fixed bugs.",
