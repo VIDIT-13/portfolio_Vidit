@@ -15,7 +15,7 @@ function Navigation() {
 
   const handleDownloadResume = () => {
     // Replace with your actual resume PDF path
-    const resumeUrl = '/assets/resume.pdf';
+    const resumeUrl = '/assets/Resume-Vidit.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Vidit-Resume.pdf';
