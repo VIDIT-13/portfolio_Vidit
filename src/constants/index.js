@@ -156,7 +156,19 @@ export const experiences = [
       "Collaborated in Agile sprints with cross-functional teams and participated in code reviews.",
     ],
   },
+  {
+    title: "Freelance Web Developer",
+    job: "Self-Employed",
+    date: "October 2024 - Present",
+    contents: [
+      "Developed responsive and interactive web applications using React, JavaScript, HTML, and CSS for multiple clients.",
+      "Integrated third-party APIs, implemented authentication, and optimized performance for production-ready projects.",
+      "Collaborated directly with clients to gather requirements, deliver scalable solutions, and meet project deadlines.",
+      "Deployed applications using modern hosting platforms and provided post-deployment support and maintenance.",
+    ],
+  },
 ];
+
 
 export const mySocials = [
   {
