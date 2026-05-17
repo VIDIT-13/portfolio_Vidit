@@ -2,15 +2,17 @@
 
 # 🚀 Vidit Allen — Developer Portfolio
 
-### Crafting Secure, Scalable & Interactive Web Experiences ⚡
-
 <img src="./public/assets/portfolio-preview.png" alt="Portfolio Banner" width="100%"/>
 
-[![Portfolio](https://img.shields.io/badge/🌐_Live_Portfolio-Visit_Now-blue?style=for-the-badge)](https://viditallen.xyz)
+### Crafting Secure, Scalable & Interactive Web Experiences ⚡
+
+<br/>
+
 [![React](https://img.shields.io/badge/React-⚛️-61DAFB?style=for-the-badge&logo=react)]()
 [![Three.js](https://img.shields.io/badge/Three.js-🌌-black?style=for-the-badge&logo=three.js)]()
-[![Tailwind](https://img.shields.io/badge/TailwindCSS-🎨-38B2AC?style=for-the-badge&logo=tailwind-css)]()
-[![Framer](https://img.shields.io/badge/Framer_Motion-🧠-0055FF?style=for-the-badge&logo=framer)]()
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-🎨-38B2AC?style=for-the-badge&logo=tailwind-css)]()
+[![Framer Motion](https://img.shields.io/badge/FramerMotion-🧠-0055FF?style=for-the-badge)]()
+[![GSAP](https://img.shields.io/badge/GSAP-✨-88CE02?style=for-the-badge)]()
 
 </div>
 
@@ -18,39 +20,31 @@
 
 # ✨ About Me
 
-Hey 👋 I'm **Vidit Allen**, a passionate **Frontend Developer & Cybersecurity Enthusiast** who enjoys building immersive and visually engaging web experiences.
+Hey 👋 I'm **Vidit Allen**, a passionate **Frontend Developer & Cybersecurity Enthusiast** dedicated to creating immersive digital experiences with modern technologies.
 
-I love combining:
+I enjoy combining:
 
 ⚡ Interactive animations  
 🌌 3D experiences  
-🔐 Security-focused solutions  
-🚀 Modern frontend technologies  
+🔐 Secure web applications  
+🚀 Scalable frontend architecture  
 
-to create projects that feel both powerful and memorable.
-
----
-
-# 🖥️ Live Demo
-
-🌐 **Portfolio Website:**  
-👉 **https://viditallen.xyz**
+to build projects that are engaging and impactful.
 
 ---
 
 # 🎯 Features
 
-✅ Interactive Hero Section  
-✅ Dynamic Flip Word Animations  
+✅ Dynamic Hero Section  
 ✅ Responsive UI (Desktop + Mobile)  
-✅ GSAP Scroll-based Animations  
-✅ Three.js 3D Elements  
-✅ Particle Background Effects  
-✅ Project Showcase Section  
-✅ Smooth Navigation  
-✅ Email Contact Integration  
-✅ Reusable Modular Components  
-✅ Modern UI/UX Design  
+✅ Three.js Interactive Elements  
+✅ GSAP Scroll Animations  
+✅ Framer Motion Transitions  
+✅ Particle Effects & Background Layers  
+✅ Modern UI/UX  
+✅ Project Showcase  
+✅ Functional Contact Form  
+✅ Modular & Reusable Components  
 
 ---
 
@@ -61,37 +55,38 @@ to create projects that feel both powerful and memorable.
 | Frontend | Animation | 3D & Effects | Tools |
 |-----------|------------|---------------|--------|
 | React.js ⚛️ | Framer Motion 🧠 | Three.js 🌌 | Vite ⚡ |
-| TailwindCSS 🎨 | GSAP ✨ | Canvas Particles 🎇 | Git/GitHub 🔥 |
-| JavaScript 💻 | ScrollTrigger 🚀 | Custom Effects 🌠 | EmailJS 📩 |
+| TailwindCSS 🎨 | GSAP ✨ | Canvas Animations 🎇 | Git/GitHub 🔥 |
+| JavaScript 💻 | ScrollTrigger 🚀 | Interactive Effects 🌠 | EmailJS 📩 |
 
 </div>
 
 ---
 
-# 📸 Preview
+# 📸 Portfolio Preview
 
 <div align="center">
 
-<img src="./public/assets/portfolio-preview.png" width="100%"/>
+<img src="./public/assets/portfolio-preview.png" width="100%" />
 
 </div>
 
 ---
 
-# 📂 Project Structure
+# 📂 Folder Structure
 
 ```bash
 📦 Portfolio
 ├── 📁 public
-│ ├── 📁 assets
-│ └── favicon.ico
+│   ├── 📁 assets
+│   │   └── portfolio-preview.png
+│   └── favicon.ico
 │
 ├── 📁 src
-│ ├── 📁 Components
-│ ├── 📁 Pages
-│ ├── 📁 Data
-│ ├── 📁 Styles
-│ └── App.jsx
+│   ├── 📁 Components
+│   ├── 📁 Pages
+│   ├── 📁 data
+│   ├── 📁 styles
+│   └── App.jsx
 │
 ├── .env
 ├── package.json
@@ -101,15 +96,15 @@ to create projects that feel both powerful and memorable.
 
 ---
 
-# ⚙️ Installation & Setup
+# ⚙️ Installation
 
-Clone the repository:
+Clone repository:
 
 ```bash
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/VIDIT-13/portfolio.git
 ```
 
-Move into project folder:
+Move into directory:
 
 ```bash
 cd portfolio
@@ -121,7 +116,7 @@ Install dependencies:
 npm install
 ```
 
-Start development server:
+Run locally:
 
 ```bash
 npm run dev
@@ -129,22 +124,31 @@ npm run dev
 
 ---
 
-# 🚀 Future Improvements
+# 🚀 Future Updates
 
-- AI Chat Assistant integration
-- Dark/Light theme switching
-- More Three.js interactions
-- Blog section
-- Performance optimization
-- Advanced cybersecurity projects showcase
+- AI Assistant Integration
+- Dark / Light Mode
+- Advanced Three.js Experiences
+- Blog Section
+- More Cybersecurity Projects
+- Performance Optimization
 
 ---
 
 # 🤝 Connect With Me
 
-💼 LinkedIn  
-📧 Email  
-🌐 Portfolio  
+<div align="center">
+
+### 💻 GitHub
+**https://github.com/VIDIT-13**
+
+### 💼 LinkedIn
+**https://www.linkedin.com/in/vidit-30913a293/**
+
+### 📧 Email
+**VIDITALLEN4@GMAIL.COM**
+
+</div>
 
 ---
 
@@ -152,6 +156,6 @@ npm run dev
 
 ### ⭐ If you like this project, consider giving it a star ⭐
 
-"Code. Create. Secure. Repeat."
+### "Code • Create • Secure • Repeat"
 
 </div>
