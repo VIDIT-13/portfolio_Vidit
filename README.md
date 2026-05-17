@@ -139,7 +139,7 @@ npm run dev
 **https://www.linkedin.com/in/vidit-30913a293/**
 
 ### 📧 Email
-**VIDITALLEN4@GMAIL.COM**
+**viditallen4@gmail.com**
 
 </div>
 
