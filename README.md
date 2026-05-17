@@ -2,8 +2,9 @@
 
 # 🚀 Vidit Allen — Developer Portfolio
 
+<a href="https://viditallen.xyz" >
 <img src="./public/assets/portfolio-preview.png" alt="Portfolio Banner" width="100%"/>
-
+</a>  
 ### Crafting Secure, Scalable & Interactive Web Experiences ⚡
 
 <br/>
@@ -62,15 +63,7 @@ to build projects that are engaging and impactful.
 
 ---
 
-# 📸 Portfolio Preview
 
-<div align="center">
-
-<img src="./public/assets/portfolio-preview.png" width="100%" />
-
-</div>
-
----
 
 # 📂 Folder Structure
 
