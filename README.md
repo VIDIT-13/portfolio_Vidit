@@ -1,57 +1,161 @@
+<div align="center">
+
 # 🚀 Vidit Allen — Developer Portfolio
 
-Welcome to my personal portfolio website! This portfolio showcases who I am, what I do, and some of the exciting projects I've built using the MERN stack and other modern technologies.
+<img src="./public/assets/portfolio-preview.png" alt="Portfolio Banner" width="100%"/>
+
+### Crafting Secure, Scalable & Interactive Web Experiences ⚡
+
+<br/>
+
+[![React](https://img.shields.io/badge/React-⚛️-61DAFB?style=for-the-badge&logo=react)]()
+[![Three.js](https://img.shields.io/badge/Three.js-🌌-black?style=for-the-badge&logo=three.js)]()
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-🎨-38B2AC?style=for-the-badge&logo=tailwind-css)]()
+[![Framer Motion](https://img.shields.io/badge/FramerMotion-🧠-0055FF?style=for-the-badge)]()
+[![GSAP](https://img.shields.io/badge/GSAP-✨-88CE02?style=for-the-badge)]()
+
+</div>
 
 ---
 
-## 🖥️ Live Preview
+# ✨ About Me
 
-🌐 [Visit My Portfolio](https://viditallen.xyz)
+Hey 👋 I'm **Vidit Allen**, a passionate **Frontend Developer & Cybersecurity Enthusiast** dedicated to creating immersive digital experiences with modern technologies.
 
----
+I enjoy combining:
 
-## 🛠️ Tech Stack
+⚡ Interactive animations  
+🌌 3D experiences  
+🔐 Secure web applications  
+🚀 Scalable frontend architecture  
 
-This portfolio is built using:
-
-- **React.js** ⚛️
-- **TailwindCSS** 🎨
-- **Framer Motion** 🧠
-- **Three.js** 🌌
-- **EmailJS** 📩
-- **Vite** ⚡
-- **GSAP / ScrollTrigger** ✨
-- **Custom Canvas Animations / Particles** 🎇
+to build projects that are engaging and impactful.
 
 ---
 
-## 📂 Features
+# 🎯 Features
 
-- Dynamic "FlipWords" animation
-- Hero section with desktop/mobile responsiveness
-- Interactive background layers and animations
-- Project showcase with filtering and hover effects
-- Smooth scrolling and modern UI
-- Functional contact form (EmailJS integration)
-- Animated particle background
-- Modular components and reusability
+✅ Dynamic Hero Section  
+✅ Responsive UI (Desktop + Mobile)  
+✅ Three.js Interactive Elements  
+✅ GSAP Scroll Animations  
+✅ Framer Motion Transitions  
+✅ Particle Effects & Background Layers  
+✅ Modern UI/UX  
+✅ Project Showcase  
+✅ Functional Contact Form  
+✅ Modular & Reusable Components  
 
 ---
 
-## 📁 Folder Structure
+# 🛠️ Tech Stack
+
+<div align="center">
+
+| Frontend | Animation | 3D & Effects | Tools |
+|-----------|------------|---------------|--------|
+| React.js ⚛️ | Framer Motion 🧠 | Three.js 🌌 | Vite ⚡ |
+| TailwindCSS 🎨 | GSAP ✨ | Canvas Animations 🎇 | Git/GitHub 🔥 |
+| JavaScript 💻 | ScrollTrigger 🚀 | Interactive Effects 🌠 | EmailJS 📩 |
+
+</div>
+
+---
+
+# 📸 Portfolio Preview
+
+<div align="center">
+
+<img src="./public/assets/portfolio-preview.png" width="100%" />
+
+</div>
+
+---
+
+# 📂 Folder Structure
 
 ```bash
-.
-├── public/
-│   ├── assets/
+📦 Portfolio
+├── 📁 public
+│   ├── 📁 assets
+│   │   └── portfolio-preview.png
 │   └── favicon.ico
-├── src/
-│   ├── Components/
-│   ├── Pages/
-│   ├── data/
-│   ├── styles/
+│
+├── 📁 src
+│   ├── 📁 Components
+│   ├── 📁 Pages
+│   ├── 📁 data
+│   ├── 📁 styles
 │   └── App.jsx
+│
 ├── .env
-├── index.html
 ├── package.json
+├── vite.config.js
 └── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+Clone repository:
+
+```bash
+git clone https://github.com/VIDIT-13/portfolio.git
+```
+
+Move into directory:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+---
+
+# 🚀 Future Updates
+
+- AI Assistant Integration
+- Dark / Light Mode
+- Advanced Three.js Experiences
+- Blog Section
+- More Cybersecurity Projects
+- Performance Optimization
+
+---
+
+# 🤝 Connect With Me
+
+<div align="center">
+
+### 💻 GitHub
+**https://github.com/VIDIT-13**
+
+### 💼 LinkedIn
+**https://www.linkedin.com/in/vidit-30913a293/**
+
+### 📧 Email
+**VIDITALLEN4@GMAIL.COM**
+
+</div>
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, consider giving it a star ⭐
+
+### "Code • Create • Secure • Repeat"
+
+</div>
