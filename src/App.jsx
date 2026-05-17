@@ -65,7 +65,7 @@ const App = () => {
           <About></About>
         </section>
         <section id="work">
-          <Projects />
+          {/* <Projects /> */}
           <Experiences />
         </section>
         <section id="contact">
